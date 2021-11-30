@@ -1,7 +1,5 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-// import { useState } from "react";
-import TableHeader from "./TableHeader";
 import TableItem from "./TableItem";
 
 const Tablelist = ({ posts, title, remove }) => {
