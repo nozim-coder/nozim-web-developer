@@ -4,31 +4,19 @@ import MyButon from "./UI/button/MyButon";
 const TableItem = (props) => {
   // console.log(props);
   return (
-    <tr>
-      <th scope="row">{props.number}</th>
-      <td>{props.post.title}</td>
-      <td>{props.post.stack}</td>
-      <td>
+    <div className="d-flex justify-content-between border p-2 my-2">
+      <p>{props.number}</p> 
+      <p>{props.post.title}</p>
+      <p>{props.post.stack}</p>
+      <p>
         <MyButon
           className="btn btn-outline-danger w-100"
           onClick={() => props.remove(props.post)}
         >
           Delete
         </MyButon>
-        {/* <button className="btn btn-outline-danger">Delete</button> */}
-      </td>
-    </tr>
-    //   {/* <tr>
-    //         <th scope="row">2</th>
-    //         <td>Jacob</td>
-    //         <td>Thornton</td>
-    //         <td>@fat</td>
-    //       </tr>
-    //       <tr>
-    //         <th scope="row">3</th>
-    //         <td colspan="2">Larry the Bird</td>
-    //         <td>@twitter</td>
-    //       </tr> */}
+      </p>
+    </div>
   );
 };
 

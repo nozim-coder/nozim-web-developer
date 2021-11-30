@@ -41,7 +41,7 @@ function App() {
     setposts(posts.filter((s) => s.id !== post.id));
   };
   return (
-    <div className="App">
+    <div className="app w-50 mx-auto">
       <div className="apps w-50 mx-auto">
         <MyButon className="btn btn-primary" onClick={() => setModal(true)}>
           Add Post
